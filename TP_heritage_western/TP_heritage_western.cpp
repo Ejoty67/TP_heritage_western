@@ -9,18 +9,20 @@
 #include "Cowboy.h"
 #include "Barman.h"
 #include "Sherif.h"
+#include "Arme.h"
 #include <string>
 using namespace std;
 
 int main()
 {
+
     Cowboy lucky("Lucky Luke");
     Dame jenny("Jenny");
     Brigand joe("Joe");
     Barman robert("Robert", "bière","Saloon 67");
     Sherif clint("Clint", "eau");
 
-
+    /*
     cout << "premiere histoire :\n\n";
     lucky.sePresente();
     jenny.sePresente();
@@ -44,6 +46,15 @@ int main()
     joe.seFaitEmprisonne(clint);
 
     cout << " fin de la deuxieme histoire\n";
+    */
+
+
+
+    lucky.sePresente();
+    joe.sePresente();
+    //bagarre
+
+
 
 
 

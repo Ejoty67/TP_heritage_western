@@ -1,12 +1,14 @@
 #pragma once
 #include <string>
 #include "Humain.h"
+#include "Arme.h"
 using namespace std;
 
 class Cowboy :public Humain {
 private:
 	int populariter = 0;
 	string adjectif = "vaillant";
+	Arme* arme;
 
 
 public:
@@ -21,6 +23,9 @@ public:
 	void tire(const Brigand& brigand);
 	void emprisonne(Brigand& brigand);
 	void libere(Dame& dame);
+	void tirer(const Brigand& brigand) const;
+	setArme(Arme* arme);
+	~Cowboy();
 
 };
 
